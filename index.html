@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+        <title>The Document Object Model</title>
+        <style>
+            .show{
+                display:block;
+            }
+            .hide{
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+    	<h1>Working with the Document Object Model (DOM)</h1>
+        <p>Open the console.log to see the output from the program. Edit the javaScript file to answer the questions. </p>
+
+        <button id="showVehBtn">Show vehicles</button>
+        <button id="showSingleVehBtn">Show details for one vehicle</button>
+
+        
+        <div id="vehicles">
+            <h2>List of vehicles</h2>
+        </div>
+
+
+        
+        <div id="singleVehicle" class="hide">
+            <h2>Individual vehicle details</h2>
+            <ul>
+                <li id="name"></li>
+                <li id="model"></li>
+                <li id="passengers"></li>
+            </ul>
+        </div>
+        
+        <script src="js/exercises.js"></script>
+    </body>
+</html>
