@@ -10,10 +10,9 @@ function loadData(url,callback)
 function showVehicles(data){
     console.log(data)
     const vehicles = data.results
-	
-	vehicles.forEach(function(vehicle){
-		console.log(vehicle.name);
-	})
+    vehicles.forEach(function(vehicle){
+	console.log(vehicle.name);
+    })
 }
 
 function showSingleVehicle(data){
@@ -29,7 +28,7 @@ loadData("https://www.swapi.tech/api/vehicles",showVehicles);
 /*
 1. Open the console.log. Make sure you can see the output from the function showVehicles() (it should show a list of Star Wars vehicles). Have a look at the code, see if you can follow the order of execution and how the fetch API is being used.
 
-2. Modify the code in showVehicles() so that the list of vehicles is displayed in the <div id="vehicles"></div> element in the HTML page. Have a look at https://github.com/CHT2531/js-dom-recap/blob/master/notes.md#inserting-multiple-elements for some advice. 
+2. Modify the code in showVehicles() so that the list of vehicles is displayed in the <div id="vehicles"></div> element in the HTML page. Have a look at https://github.com/CHT2531/js-dom-recap/blob/master/notes.md#creating-and-removing-content-using-documentcreateelement for some advice. 
 
 3. Modify the code so that the list of vehicles is only loaded if the user clicks the button 'Show vehicles'. You will need to add a click event to the button. See https://github.com/CHT2531/js-dom-recap/blob/master/notes.md#events for a similar example. 
 
